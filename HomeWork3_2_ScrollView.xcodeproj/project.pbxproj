@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		46925D931C4A20F900013DAD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46925D921C4A20F900013DAD /* main.m */; };
 		46925D961C4A20F900013DAD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46925D951C4A20F900013DAD /* AppDelegate.m */; };
-		46925D991C4A20F900013DAD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46925D981C4A20F900013DAD /* ViewController.m */; };
 		46925D9C1C4A20F900013DAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46925D9A1C4A20F900013DAD /* Main.storyboard */; };
 		46925D9E1C4A20F900013DAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46925D9D1C4A20F900013DAD /* Assets.xcassets */; };
 		46925DA11C4A20F900013DAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46925D9F1C4A20F900013DAD /* LaunchScreen.storyboard */; };
+		46925DB01C4A21D800013DAD /* MQPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46925DAF1C4A21D800013DAD /* MQPageView.m */; };
+		46925DB21C4A21EB00013DAD /* MQPageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46925DB11C4A21EB00013DAD /* MQPageView.xib */; };
+		46925DB51C4A2EFA00013DAD /* MQMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46925DB41C4A2EFA00013DAD /* MQMainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +22,15 @@
 		46925D921C4A20F900013DAD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		46925D941C4A20F900013DAD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		46925D951C4A20F900013DAD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		46925D971C4A20F900013DAD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		46925D981C4A20F900013DAD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		46925D9B1C4A20F900013DAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46925D9D1C4A20F900013DAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46925DA01C4A20F900013DAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46925DA21C4A20F900013DAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46925DAE1C4A21D800013DAD /* MQPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQPageView.h; sourceTree = "<group>"; };
+		46925DAF1C4A21D800013DAD /* MQPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQPageView.m; sourceTree = "<group>"; };
+		46925DB11C4A21EB00013DAD /* MQPageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MQPageView.xib; sourceTree = "<group>"; };
+		46925DB31C4A2EFA00013DAD /* MQMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQMainViewController.h; sourceTree = "<group>"; };
+		46925DB41C4A2EFA00013DAD /* MQMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQMainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +63,7 @@
 		46925D901C4A20F900013DAD /* HomeWork3_2_ScrollView */ = {
 			isa = PBXGroup;
 			children = (
-				46925D941C4A20F900013DAD /* AppDelegate.h */,
-				46925D951C4A20F900013DAD /* AppDelegate.m */,
-				46925D971C4A20F900013DAD /* ViewController.h */,
-				46925D981C4A20F900013DAD /* ViewController.m */,
-				46925D9A1C4A20F900013DAD /* Main.storyboard */,
-				46925D9D1C4A20F900013DAD /* Assets.xcassets */,
-				46925D9F1C4A20F900013DAD /* LaunchScreen.storyboard */,
-				46925DA21C4A20F900013DAD /* Info.plist */,
+				46925DA81C4A211400013DAD /* Classes */,
 				46925D911C4A20F900013DAD /* Supporting Files */,
 			);
 			path = HomeWork3_2_ScrollView;
@@ -77,6 +75,64 @@
 				46925D921C4A20F900013DAD /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		46925DA81C4A211400013DAD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				46925DAD1C4A214200013DAD /* Other */,
+				46925DAC1C4A213200013DAD /* Resource */,
+				46925DAB1C4A212C00013DAD /* Model */,
+				46925DAA1C4A212600013DAD /* View */,
+				46925DA91C4A211C00013DAD /* Controller */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		46925DA91C4A211C00013DAD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				46925DB31C4A2EFA00013DAD /* MQMainViewController.h */,
+				46925DB41C4A2EFA00013DAD /* MQMainViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		46925DAA1C4A212600013DAD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				46925DAE1C4A21D800013DAD /* MQPageView.h */,
+				46925DAF1C4A21D800013DAD /* MQPageView.m */,
+				46925DB11C4A21EB00013DAD /* MQPageView.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		46925DAB1C4A212C00013DAD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		46925DAC1C4A213200013DAD /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				46925D9A1C4A20F900013DAD /* Main.storyboard */,
+				46925D9D1C4A20F900013DAD /* Assets.xcassets */,
+				46925D9F1C4A20F900013DAD /* LaunchScreen.storyboard */,
+				46925DA21C4A20F900013DAD /* Info.plist */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		46925DAD1C4A214200013DAD /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				46925D941C4A20F900013DAD /* AppDelegate.h */,
+				46925D951C4A20F900013DAD /* AppDelegate.m */,
+			);
+			name = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46925DA11C4A20F900013DAD /* LaunchScreen.storyboard in Resources */,
+				46925DB21C4A21EB00013DAD /* MQPageView.xib in Resources */,
 				46925D9E1C4A20F900013DAD /* Assets.xcassets in Resources */,
 				46925D9C1C4A20F900013DAD /* Main.storyboard in Resources */,
 			);
@@ -150,9 +207,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46925D991C4A20F900013DAD /* ViewController.m in Sources */,
+				46925DB01C4A21D800013DAD /* MQPageView.m in Sources */,
 				46925D961C4A20F900013DAD /* AppDelegate.m in Sources */,
 				46925D931C4A20F900013DAD /* main.m in Sources */,
+				46925DB51C4A2EFA00013DAD /* MQMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

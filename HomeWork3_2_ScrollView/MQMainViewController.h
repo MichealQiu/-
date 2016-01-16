@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MQMainViewController.h
 //  HomeWork3_2_ScrollView
 //
 //  Created by Michael Qiu on 16/1/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface MQMainViewController : UIViewController
 
 @end
-
